@@ -17,4 +17,4 @@ steps:
   - name: run python script
     image: python:3.8  # Use an image with Python 3.8 to execute the script
     commands:
-      - python pythontest.py  # Run the Python script
+      - python python test.py  # Run the Python script
