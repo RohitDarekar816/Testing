@@ -1,6 +1,12 @@
 kind: pipeline
 name: run-python-script
 
+trigger:
+  event:
+    - push
+  branch:
+    - main
+
 steps:
   - name: setup python environment
     image: python:3.8  # Use an image with Python 3.8
