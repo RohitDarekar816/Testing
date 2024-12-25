@@ -31,4 +31,4 @@ jobs:
       # Run your Python file (replace 'your_script.py' with the name of your Python file)
       - name: Run Python script
         run: |
-          python python test.py  # Replace with your script filename
+          python python test.py
