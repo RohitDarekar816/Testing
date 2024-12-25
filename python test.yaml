@@ -4,6 +4,7 @@ name: run-python-script
 trigger:
   event:
     - push
+    - pull_request
   branch:
     - main
 
