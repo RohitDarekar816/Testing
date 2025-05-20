@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'docloud'
+        label 'doagent'
     }
     stages {
         stage('Build') {
