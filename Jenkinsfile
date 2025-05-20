@@ -1,12 +1,16 @@
 pipeline {
-    agent {
+    cloud {
         label 'doagent'
     }
     stages {
         stage('Build') {
             steps {
-                echo 'Running on DigitalOcean!'
-                sh 'uname -a'
+                script {
+                    def build = docker.build("myapp:${env.BUILD_ID}")
+                    build.inside {
+                        sh 'echo "Building the application..."'
+                    }
+                }
             }
         }
     }
