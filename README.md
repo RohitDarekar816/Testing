@@ -1,5 +1,4 @@
 # Testing 6
-Now we are using playslound python lib. How the sound track is the part of codebas ande
-41 and file is passed
+removed the sound support from project
 85
 55
